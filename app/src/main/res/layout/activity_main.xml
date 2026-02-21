@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#FFFFFF"
+     android:orientation="vertical">
+
+    <ListView
+         android:layout_height="0dp"
+         android:layout_width="match_parent"
+         android:stackFromBottom="true"
+         android:divider="@null"
+         android:padding="8dp"
+         android:transcriptMode="alwaysScroll"
+         android:clipToPadding="false"
+         android:layout_weight="1"
+         android:id="@+id/lvMessages"
+         android:dividerHeight="4dp">
+
+    </ListView>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:background="@drawable/bg_message_input"
+         android:gravity="center_vertical"
+         android:layout_margin="12dp"
+         android:padding="4dp"
+         android:orientation="horizontal">
+
+        <EditText
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:paddingEnd="8dp"
+             android:background="@null"
+             android:gravity="center_vertical"
+             android:hint="Сообщение"
+             android:minHeight="48dp"
+             android:paddingStart="12dp"
+             android:maxLines="4"
+             android:layout_weight="1"
+             android:inputType="textCapSentences|textMultiLine"
+             android:id="@+id/etMessage" />
+
+        <ImageButton
+             android:layout_height="44dp"
+             android:layout_width="44dp"
+             android:src="@android:drawable/ic_menu_send"
+             android:scaleType="centerInside"
+             android:contentDescription="Отправить"
+             android:background="@drawable/round_button"
+             android:hapticFeedbackEnabled="true"
+             android:layout_margin="4dp"
+             android:padding="8dp"
+             android:tint="#FFFFFF"
+             android:id="@+id/btnSend" />
+
+    </LinearLayout>
+
+</LinearLayout>
